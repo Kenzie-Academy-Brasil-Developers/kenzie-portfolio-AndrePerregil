@@ -24,7 +24,6 @@ import {
   ProjectAreaWrapperColumns,
 } from "./style";
 
-
 export const Home = (): JSX.Element => {
   return (
     <main>
@@ -32,19 +31,19 @@ export const Home = (): JSX.Element => {
         <Container>
           <HeaderContent>
             <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+              Creating experiences through the use of technology{" "}
             </Text>
             <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+              I'm studying Full-Stack development at Kenzie Academy Brasil,
+              taking part of high variety of projects to evolve my developing
+              skillset
             </Text>
             <HeaderButtonsArea>
               <Button as="a" href="#projetos">
-                Projetos
+                Projects
               </Button>
               <Button as="a" href="#tecnologias" type="btLink" color="grey5">
-                Tecnologias
+                Technologies
               </Button>
             </HeaderButtonsArea>
           </HeaderContent>
@@ -53,7 +52,7 @@ export const Home = (): JSX.Element => {
       <StackSection id="tecnologias">
         <Container>
           <Text as="h4" type="heading3" color="grey1">
-            Ferramentas que domino
+            My tech-stack
           </Text>
           <StackCards>
             {stackData.map((stack, index) => (
@@ -67,12 +66,11 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey1">
-                Vamos trocar uma ideia?
+                Want to chat?
               </Text>
               <Text as="p" type="body1" color="grey2">
-                No linkedIn sempre estou compartilhando meus processos diários
-                para desenvolver esses projetos e estou disposto a trocar
-                algumas ideias por lá
+                Please stop by my linkedIn page, you can check what I've been up
+                to there, and I'm always willing to chat!
               </Text>
               <Button
                 type="primary"
@@ -80,19 +78,19 @@ export const Home = (): JSX.Element => {
                 as="a"
                 href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
               >
-                Acessar perfil no LinkedIn
+                My profile on LinkedIn
               </Button>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
               <Text type="body1" color="grey2" css={{ marginBottom: "$2" }}>
-                Projetos
+                Projects
               </Text>
               <Text as="h3" type="heading2" color="grey1">
-                Originalidade e{" "}
+                Originality and{" "}
                 <Text as="span" color="brand1" type="heading2">
-                  dedicação
+                  dedication
                 </Text>{" "}
-                em cada detalhe
+                in every detail
               </Text>
               <Project />
             </ProjectsAreaContent>
