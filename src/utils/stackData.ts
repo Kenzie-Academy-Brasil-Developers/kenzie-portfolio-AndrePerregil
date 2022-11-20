@@ -4,8 +4,8 @@ import imgJS from "../public/static/img/stack/js.svg";
 import imgNode from "../public/static/img/stack/node.svg";
 import imgStyled from "../public/static/img/stack/styled.svg";
 import imgReact from "../public/static/img/stack/react.svg";
-import { SiTypescript } from "react-icons/si";
-import { FaDocker } from "react-icons/fa";
+import { SiTypescript, SiDjango } from "react-icons/si";
+import { FaDocker, FaPython } from "react-icons/fa";
 
 export const stackData = [
   {
@@ -21,6 +21,10 @@ export const stackData = [
     img: imgJS,
   },
   {
+    title: "Python",
+    img: FaPython,
+  },
+  {
     title: "Node JS",
     img: imgNode,
   },
@@ -33,5 +37,6 @@ export const stackData = [
     img: imgReact,
   },
   { title: "TypeScript", img: SiTypescript },
+  { title: "Django", img: SiDjango },
   { title: "Docker", img: FaDocker },
 ];
